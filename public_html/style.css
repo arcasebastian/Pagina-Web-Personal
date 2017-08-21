@@ -2,11 +2,6 @@
 body{
     background-color: bisque;
 }
-.navegacion{
-    text-align: center;
-    width: 95%;
-    padding: 20px;
-} 
 
 div#menu{
     display: inline;
@@ -58,9 +53,6 @@ iframe#id{
     border:1px solid black;
     margin:0px;
     width: 50%;
-}
-#navegacion1{
-
 }
 #index{
 display: inline;
