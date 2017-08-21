@@ -1,0 +1,81 @@
+
+body{
+    background-color: bisque;
+}
+.navegacion{
+    text-align: center;
+    width: 95%;
+    padding: 20px;
+} 
+
+div#menu{
+    display: inline;
+    border-radius: 10%;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 1%;
+}
+td.galeria{
+    border: 2px solid gray;
+    width: 25%;
+    height: 150px;
+    background-color: lightgrey;
+}
+table.galeria{
+    width: 100%;
+}
+footer{
+    text-align: right;
+    border: 1px solid gray;
+    font-style: oblique;
+    width: 99%;
+}
+input#input-contacto{
+    width: 50%;
+    height: 30%;
+}
+.contacto{
+    margin: 20px;
+}
+article.cuadros-Abou{
+    margin: 5px;
+    border: 0.5px solid lightgrey;
+    width: 80%;
+    margin-left: auto;
+    background-color: lightgray;
+    padding: 2%;
+}
+
+
+iframe#id{
+    width: 90%;
+    height: 100%;
+    
+    border: 0px;
+
+}
+#menu1{
+    border:1px solid black;
+    margin:0px;
+    width: 50%;
+}
+#navegacion1{
+
+}
+#index{
+display: inline;
+}
+td.PaginaPrin#frame{
+    width: 50%;
+    height: 100%
+
+}
+td.PaginaPrin{
+    width: 5%;
+    height: 100%;
+    vertical-align: top;
+}
+#resumen{
+    height: 100%;
+    width: 100%;
+}
