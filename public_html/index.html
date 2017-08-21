@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"  crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
@@ -13,168 +12,200 @@
     </head>    
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTab" aria-controls="myTab" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="barra">
-                <ul class="navbar-nav nav-pills mr-auto">
+            <div class="collapse navbar-collapse" id="myTab">
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class='nav-link' href="#resumen">Resumen</a>
+                        <a class='nav-link active' data-toogle="tab" href="#resumen" role="tab">Resumen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre_mi">Sobre mi</a>
+                        <a class="nav-link" data-toogle="tab" href="#sobre_mi" role="tab">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#galeria">Galeria</a>
+                        <a class="nav-link" data-toogle="tab" href="#galeria" role="tab">Galeria</a>
                     </li>
-                    <li class="nav-item disabled">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toogle="tab" href="#contacto" role="tab">Contacto</a>
                     </li>
                 </ul>
             </div>
+            <div class="navbar-brand"> Sebastian Arca</div>
         </nav>
+        <div class="tab-content">
 
-        <section id="resumen">
-            <div class="espaciado"></div>
+            <div class="tab-pane fade show active" id="resumen" role="tabpanel">
+                <div class="espaciado"></div>
 
-            <!--Información mas relevante en globos con ilustraciones o algun estilo flotante> -->
-            <table id="tabla" border="1px">
-                <thead>
-                <p>Tabla</p>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr><tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody></table>
-        </section>
-
-        <section id="sobre_mi">
-            <div class="espaciado"></div>
-            <h2>Sobre Mi</h2>
-            <article class="cuadros-Abou">
-                <h1>Datos Personales</h1>
-                <ul>
-                    <li>Nombre Completo: </li>
-                    <li>Fecha de nacimiento</li>
-                    <li>Nacionalidad</li>
-                </ul>
-            </article>
-            <article class="cuadros-Abou">
-                <h1>Capacitacion</h1>
-                <h2>Títulos</h2>
-                <h3>Técnico Auxiliar Enólogo secundario</h3>
-                <ul>
-                    <li>Institucion: Escuela Juan B. Alberdi</li>
-                    <li>Año de Gradución: 2013</li>
-                </ul>
-                <h3>Técnico terciario en Refrigeracion</h3>
-                <ul>
-                    <li>Institucion: Juana D. Ibarbouru</li>
-                    <li>Año de Gradución: 2014</li>
-                </ul>
-                <h2>Estudio en Curso</h2>
-                <h3>Tecnicatura Superior en análisis y programación de Sistemas</h3>
-                <ul>
-                    <li>Institucion: Instituto de educación superior Nº 9-026 Lavalle</li>
-                    <li>Año de incio: 2016</li>
-                </ul>
-                <h2>Habilidades</h2>
-                <h3>Idiomas</h3>
-                <ul>
-                    <li>Español: Lengua nativa</li>
-                    <li>Inglés: Nivel Avanzado en lecto-escritura. Nivel Medio en habla oral</li>
-                    <li>Japonés: Nivel Básico</li>
-                </ul>
-                <h3>Conocimientos informaticos</h3>
-                <ul>
-                    <li>Control de herramientas ofimáticas</li>
-                    <li>Programacion estructural en Python</li>
-                    <li>Programacion Orientada a Objetos en Java</li>
-                    <li>Maquetacion e implementacion de paginas web(Html,Css,Js)</li>
-                </ul>
-                <h3>Otras habilidades</h3>
-                <li>Conocimiento de Electricidad Domiciliaria</li>
-                <li>Conocimiento de soldadura OxiGas</li>
-                <li>Trato con el público </li>
-                <li>Capacidad de aprendizaje</li>
-                <h4>Cursos</h4>
-            </article>
-            <article class="cuadros-Abou">
-                <h1>Experiencia</h1>
-                <h3>Libreria Tu Moda</h3>
-                <ul>
-                    <li>Rubro: Libreria,Regaleria</li>
-                    <li>Tiempo: De 2014 a 2017</li>
-                    <li>Puesto: Atención al publico</li>
-                </ul>
-            </article>
-            <article class="cuadros-Abou">
-                <h1>Pasatiempos</h1>
-                <ul>
-                    <li>Videojuegos Profesionales</li>
-                    <li>Musica</li>
-                    <li>Guitarra</li>
-                    <li>Cine</li>
-                </ul>
-            </article>
-        </section>
-
-
-        <section id="galeria">
-            <div class="espaciado"></div>
-
-            <h1>Galeria</h1>
-            <table class="galeria">
-                <tr>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                </tr>
-                <tr>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                </tr>
-                <tr>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                    <td class="galeria"></td>
-                </tr>
-
-            </table>
-        </section>
-
-        <section id="contacto">
-            <div class="espaciado"></div>
-
-            <h1>Contactame</h1>
-            <div class="FormularioContac">
-                <form method="post" class="contacto">
-                    <table>
-                        <tr>
-                            <td><label for="nombre">Nombre</label></td><td><input name="nombre" type="text" placeholder="Nombre" required></td>
-                        </tr><tr>
-                            <td><label for="email">Correo Electronico</label></td><td><input name="email" type="email" placeholder="Email" required></td>
-                        </tr><tr>
-                            <td><label for="Telefono">Telefóno</label></td><td><input name="Telefono" type="tel" placeholder="Teléfono"></td>
-                        </tr><tr>
-                            <td><label for="motivo">Motivo</label></td><td><input name="motivo" type="text" placeholder="Motivo" required></td>
-                        </tr>
-                    </table>
-                    <label>Contenido</label><br><input name="contacto" type="textarea" id="input-contacto">
-                    <br><br>
-                    <input type="submit" value="Contactar">
-                </form>
+                <!--Información mas relevante en globos con ilustraciones o algun estilo flotante> -->
+                <div class="container">
+                    <h2 class="text-center">Habilidades</h2>
+                    <div class="row center">
+                        <div class="col-sm-6">
+                            <div class="card bg-light text-black">
+                                <img class="card-img" src="img/skills/html_css.png" alt="img/skills/html_css1.png">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-sm-4">
+                            <div class="card bg-light text-black">
+                                <img class="card-img" src="img/skills/node.png" alt="img/skills/node1.png">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card bg-light text-black">
+                                <img class="card-img" src="img/skills/html_css.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card bg-light text-black">
+                                <img class="card-img" src="img/skills/html_css.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Card title</h4>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <footer>
+
+            <div class="tab-pane fade" id="sobre_mi" role="tabpanel">
+                <div class="espaciado"></div>
+                <h2>Sobre Mi</h2>
+                <article class="cuadros-Abou">
+                    <h1>Datos Personales</h1>
+                    <ul>
+                        <li>Nombre Completo: </li>
+                        <li>Fecha de nacimiento</li>
+                        <li>Nacionalidad</li>
+                    </ul>
+                </article>
+                <article class="cuadros-Abou">
+                    <h1>Capacitacion</h1>
+                    <h2>Títulos</h2>
+                    <h3>Técnico Auxiliar Enólogo secundario</h3>
+                    <ul>
+                        <li>Institucion: Escuela Juan B. Alberdi</li>
+                        <li>Año de Gradución: 2013</li>
+                    </ul>
+                    <h3>Técnico terciario en Refrigeracion</h3>
+                    <ul>
+                        <li>Institucion: Juana D. Ibarbouru</li>
+                        <li>Año de Gradución: 2014</li>
+                    </ul>
+                    <h2>Estudio en Curso</h2>
+                    <h3>Tecnicatura Superior en análisis y programación de Sistemas</h3>
+                    <ul>
+                        <li>Institucion: Instituto de educación superior Nº 9-026 Lavalle</li>
+                        <li>Año de incio: 2016</li>
+                    </ul>
+                    <h2>Habilidades</h2>
+                    <h3>Idiomas</h3>
+                    <ul>
+                        <li>Español: Lengua nativa</li>
+                        <li>Inglés: Nivel Avanzado en lecto-escritura. Nivel Medio en habla oral</li>
+                        <li>Japonés: Nivel Básico</li>
+                    </ul>
+                    <h3>Conocimientos informaticos</h3>
+                    <ul>
+                        <li>Control de herramientas ofimáticas</li>
+                        <li>Programacion estructural en Python</li>
+                        <li>Programacion Orientada a Objetos en Java</li>
+                        <li>Maquetacion e implementacion de paginas web(Html,Css,Js)</li>
+                    </ul>
+                    <h3>Otras habilidades</h3>
+                    <ul>
+                        <li>Conocimiento de Electricidad Domiciliaria</li>
+                        <li>Conocimiento de soldadura OxiGas</li>
+                        <li>Trato con el público </li>
+                        <li>Capacidad de aprendizaje</li>
+                    </ul>
+                    <h4>Cursos</h4>
+                </article>
+                <article class="cuadros-Abou">
+                    <h1>Experiencia</h1>
+                    <h3>Libreria Tu Moda</h3>
+                    <ul>
+                        <li>Rubro: Libreria,Regaleria</li>
+                        <li>Tiempo: De 2014 a 2017</li>
+                        <li>Puesto: Atención al publico</li>
+                    </ul>
+                </article>
+                <article class="cuadros-Abou">
+                    <h1>Pasatiempos</h1>
+                    <ul>
+                        <li>Videojuegos Profesionales</li>
+                        <li>Musica</li>
+                        <li>Guitarra</li>
+                        <li>Cine</li>
+                    </ul>
+                </article>
+            </div>
+
+
+            <div class="tab-pane fade" id="galeria" role="tabpanel">
+                <div class="espaciado"></div>
+
+                <h1>Galeria</h1>
+                <table class="galeria">
+                    <tr>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                    </tr>
+                    <tr>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                    </tr>
+                    <tr>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                        <td class="galeria"></td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="tab-pane fade " id="contacto" role="tabpanel">
+                <div class="espaciado"></div>
+                <div class="container">
+                    <h1>Contactame</h1>
+                    <div class="FormularioContac">
+                        <form method="post" class="contacto">
+                            <table>
+                                <tr>
+                                    <td><label for="nombre">Nombre</label></td><td><input name="nombre" type="text" placeholder="Nombre" required></td>
+                                </tr><tr>
+                                    <td><label for="email">Correo Electronico</label></td><td><input name="email" type="email" placeholder="Email" required></td>
+                                </tr><tr>
+                                    <td><label for="Telefono">Telefóno</label></td><td><input name="Telefono" type="tel" placeholder="Teléfono"></td>
+                                </tr><tr>
+                                    <td><label for="motivo">Motivo</label></td><td><input name="motivo" type="text" placeholder="Motivo" required></td>
+                                </tr>
+                            </table>
+                            <label>Contenido</label><br><textarea name="contacto" id="input-contacto"></textarea>
+                            <br><br>
+                            <input type="submit" value="Contactar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="fixed-bottom"> 
             <small>Creado por Sebastian Arca</small>
         </footer>
         <br/>
@@ -183,6 +214,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <script src="js/tabs.js" type="text/javascript"></script>
+
     </body>
 
 </html>
