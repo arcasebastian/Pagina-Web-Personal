@@ -67,7 +67,11 @@ td.PaginaPrin{
     height: 100%;
     vertical-align: top;
 }
-#resumen{
+#tabla{
     height: 100%;
     width: 100%;
+}
+
+.espaciado{
+    height: 50px;
 }

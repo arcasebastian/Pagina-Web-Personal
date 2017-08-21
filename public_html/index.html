@@ -1,41 +1,44 @@
 <!DOCTYPE html/>
 <html>
     <head>
-        <meta charset="utf-8">     
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"  crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+
+
     </head>    
     <body>
-        <header></header>
-
-
-
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra" aria-controls="barra" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="navbar-link" href="#resumen">Resumen</a>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav nav-pills mr-auto">
+                    <li class="nav-item">
+                        <a class='nav-link' href="#resumen">Resumen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link" href="#sobre_mi">Sobre mi</a>
+                        <a class="nav-link" href="#sobre_mi">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-link" href="#galeria">Galeria</a>
+                        <a class="nav-link" href="#galeria">Galeria</a>
                     </li>
                     <li class="nav-item disabled">
-                        <a class="navbar-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
+        <section id="resumen">
+            <div class="espaciado"></div>
 
-        <section> 
             <!--Información mas relevante en globos con ilustraciones o algun estilo flotante> -->
-            <table id="resumen" border="1px">
+            <table id="tabla" border="1px">
                 <thead>
                 <p>Tabla</p>
                 </thead>
@@ -53,6 +56,8 @@
         </section>
 
         <section id="sobre_mi">
+            <div class="espaciado"></div>
+            <h2>Sobre Mi</h2>
             <article class="cuadros-Abou">
                 <h1>Datos Personales</h1>
                 <ul>
@@ -123,6 +128,8 @@
 
 
         <section id="galeria">
+            <div class="espaciado"></div>
+
             <h1>Galeria</h1>
             <table class="galeria">
                 <tr>
@@ -145,6 +152,8 @@
         </section>
 
         <section id="contacto">
+            <div class="espaciado"></div>
+
             <h1>Contactame</h1>
             <div class="FormularioContac">
                 <form method="post" class="contacto">
